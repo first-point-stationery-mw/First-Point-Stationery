@@ -1,87 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Point Stationery | Limbe</title>
-    <!-- This links to your CSS file. No leading slash! -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First Point Stationery & General Supplies in Limbe, Blantyre. Stationery, printing, photocopying, scanning, binding and laminating.">
+  <title>First Point Stationery & General Supplies | Limbe, Blantyre</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER SECTION -->
-    <header class="site-header">
-        <div class="container header-container">
-            <!-- LOGO HERE -->
-            <!-- Replace 'images/logo.png' with your actual file name -->
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="First Point Stationery Logo" class="site-logo">
-            </a>
-
-            <!-- Navigation -->
-            <nav class="main-nav">
-                <a href="#">Products</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <a href="tel:+265000000" class="call-btn">📞 Call us</a>
-            </nav>
+  <!-- 1. HEADER -->
+  <header id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="First Point Stationery home">
+        <span class="brand-mark"><i class="fa-solid fa-pen-ruler"></i></span>
+        <span><strong>First Point <em>Stationery</em></strong><small>& General Supplies · Limbe</small></span>
+      </a>
+      
+      <!-- 2. NAV -->
+      <nav id="navMenu" aria-label="Main navigation">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#products">Products</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-call" href="tel:+265999001027"><i class="fa-solid fa-phone"></i> Call us</a>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+  <!-- 3. MAIN -->
+  <main>
+    <!-- SECTION: Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> Pacific Tower · Limbe Market · Blantyre</p>
+          <h1>Your one-stop point for <span>stationery & printing</span></h1>
+          <p class="lead">Quality stationery and dependable document services for students, schools, offices and businesses.</p>
+          <div class="actions">
+            <a class="btn primary" href="#products"><i class="fa-solid fa-bag-shopping"></i> Explore products</a>
+            <a class="btn secondary" href="https://wa.me/265999001027" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+          <div class="trust">
+            <span><i class="fa-solid fa-circle-check"></i> Quality supplies</span>
+            <span><i class="fa-solid fa-bolt"></i> Fast service</span>
+            <span><i class="fa-solid fa-print"></i> Print & copy</span>
+          </div>
+        </div>
+        <div class="hero-photo reveal">
+          <img src="first-point-shop.png" alt="Modern stationery and printing shop with office supplies and printers">
+          <div class="photo-card"><strong>Everything in one place</strong><span>Stationery · Printing · Binding</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <p class="eyebrow">SHOP ESSENTIALS</p>
+        <h2>Stationery & supplies</h2>
+        <p class="section-intro">Everyday essentials for the classroom, office and home.</p>
+        <div class="product-grid" id="productGrid">
+          <!-- 4. ARTICLE -->
+          <article class="card"><i class="fa-solid fa-file-lines"></i><h3>Paper & hardcovers</h3><p>Printing paper, exercise books and hardcovers.</p></article>
+          <article class="card"><i class="fa-solid fa-pen"></i><h3>Pens & pencils</h3><p>Writing tools, markers and highlighters.</p></article>
+          <article class="card"><i class="fa-solid fa-calculator"></i><h3>Calculators</h3><p>Calculators and geometry essentials.</p></article>
+          <article class="card"><i class="fa-solid fa-print"></i><h3>Toner & ink</h3><p>Printer toner, ink and related supplies.</p></article>
+          <article class="card"><i class="fa-solid fa-folder-open"></i><h3>Files & folders</h3><p>Folders, files, envelopes, clips and pins.</p></article>
+          <article class="card"><i class="fa-solid fa-note-sticky"></i><h3>Office essentials</h3><p>Sticky notes, paste, rulers and desk supplies.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Services -->
+    <section id="services" class="section services">
+      <div class="container">
+        <p class="eyebrow">DOCUMENT CENTRE</p>
+        <h2>Professional document services</h2>
+        <p class="section-intro">Quick, careful service for individual documents and bulk work.</p>
+        <div class="service-grid">
+          <article><span>01</span><i class="fa-solid fa-print"></i><h3>Printing</h3><p>Black & white and colour printing for documents, flyers and more.</p></article>
+          <article><span>02</span><i class="fa-solid fa-copy"></i><h3>Photocopying</h3><p>Fast copying for small and bulk document jobs.</p></article>
+          <article><span>03</span><i class="fa-solid fa-scanner"></i><h3>Scanning</h3><p>Clear digital copies of documents, photographs and IDs.</p></article>
+          <article><span>04</span><i class="fa-solid fa-book-open"></i><h3>Binding</h3><p>Professional binding for reports, assignments and projects.</p></article>
+          <article><span>05</span><i class="fa-solid fa-id-card"></i><h3>Laminating</h3><p>Protect certificates, cards and important documents.</p></article>
+          <article><span>06</span><i class="fa-solid fa-keyboard"></i><h3>Typing & formatting</h3><p>CVs, letters, assignments and document formatting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">VISIT OR CONTACT US</p>
+          <h2>Find First Point in Limbe</h2>
+          <p>Pacific Tower, Limbe Market, Blantyre, Malawi. Ground floor, Shop G12.</p>
+          
+          <!-- 5. ASIDE (Used for side information) -->
+          <aside class="hours-card">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <strong>Opening hours</strong><br>
+              Monday – Saturday: 7:30 AM – 5:30 PM
+            </div>
+          </aside>
+        </div>
         
-        <!-- Location & Hero Text -->
-        <section class="hero-section">
-            <p class="location-text">📍 Pacific Tower · Limbe Market · Blantyre</p>
-            <h1>Your one-stop point for stationery & printing</h1>
-            <p class="subtitle">Quality stationery and dependable document services for students, schools, offices and businesses.</p>
-            
-            <div class="hero-buttons">
-                <a href="#" class="btn primary-btn">🛍️ Explore products</a>
-                <a href="#" class="btn secondary-btn">💬 Order on WhatsApp</a>
-            </div>
-        </section>
+        <div class="contact-card">
+          <a href="tel:+265999001027"><i class="fa-solid fa-phone"></i><span><small>Call / WhatsApp</small>+265 999 001 027</span></a>
+          <a href="tel:+265885457976"><i class="fa-solid fa-phone"></i><span><small>Call</small>+265 885 457 976</span></a>
+          <a href="https://wa.me/265999001027" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span><small>Message us</small>WhatsApp</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Features & Image Section -->
-        <section class="features-section">
-            <div class="features-text">
-                <ul class="feature-list">
-                    <li>✔️ Quality supplies</li>
-                    <li>⚡ Fast service</li>
-                    <li>🖨️ Print & copy</li>
-                </ul>
-                <p><strong>Everything in one place:</strong> Stationery · Printing · Binding</p>
-            </div>
-            
-            <div class="features-image">
-                <!-- SHOP IMAGE HERE -->
-                <!-- Replace 'images/shop.jpg' with your actual file name -->
-                <img src="images/shop.jpg" alt="Modern stationery and printing shop" class="content-image">
-            </div>
-        </section>
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <!-- Footer Column 1 -->
+      <div class="footer-brand">
+        <h3>First Point Stationery</h3>
+        <p>Your one-stop shop for quality stationery, printing, and general supplies in Limbe, Malawi.</p>
+      </div>
 
-        <!-- Products Section -->
-        <section class="products-section">
-            <p class="section-label">SHOP ESSENTIALS</p>
-            <h2>Stationery & supplies</h2>
-            <p>Everyday essentials for the classroom, office and home.</p>
+      <!-- Footer Column 2 -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:+265999001027"><i class="fa-solid fa-phone"></i> +265 999 001 027</a></li>
+          <li><a href="tel:+265885457976"><i class="fa-solid fa-phone"></i> +265 885 457 976</a></li>
+          <li><a href="mailto:firstpointstationery@gmail.com"><i class="fa-solid fa-envelope"></i> firstpointstationery@gmail.com</a></li>
+          <li><a href="mailto:josiyachilolezo@gmail.com"><i class="fa-solid fa-envelope"></i> josiyachilolezo@gmail.com</a></li>
+        </ul>
+      </div>
 
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <h3>📄 Paper & hardcovers</h3>
-                    <p>Printing paper, exercise books and hardcovers.</p>
-                </div>
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <h3>✏️ Pens & pencils</h3>
-                    <p>Quality writing instruments for every need.</p>
-                </div>
-            </div>
-        </section>
+      <!-- Footer Column 3 -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <p>We are on social media! Connect with us for updates.</p>
+        <div class="social-icons">
+          <!-- Replace # with your actual Facebook link -->
+          <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/265999001027" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Replace # with your actual Instagram link -->
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
 
-    </main>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> First Point Stationery & General Supplies. All rights reserved.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Floating WhatsApp Button -->
+  <a class="floating-whatsapp" href="https://wa.me/265999001027" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  
+  <script src="script.js"></script>
 </body>
 </html>
